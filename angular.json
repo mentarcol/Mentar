@@ -33,7 +33,21 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/jquery-2.1.1.js",
+              "src/assets/js/modernizr.custom.js",
+              "src/assets/js/jquery.mobile.custom.min.js",
+              "src/assets/js/jquery.animsition.min.js",
+              "src/assets/js/jquery.easing.js",
+              "src/assets/js/smoothScroll.js",
+              "src/assets/js/waypoints.min.js",
+              "src/assets/js/scrollReveal.js",
+              "src/assets/js/owl.carousel.min.js",
+              "src/assets/js/smk-accordion.js",
+              "src/assets/js/jquery.fitvids.js",
+              "src/assets/js/styleswitcher.js",
+              "src/assets/js/index.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -101,7 +115,21 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/jquery-2.1.1.js",
+              "src/assets/js/modernizr.custom.js",
+              "src/assets/js/jquery.mobile.custom.min.js",
+              "src/assets/js/jquery.animsition.min.js",
+              "src/assets/js/jquery.easing.js",
+              "src/assets/js/smoothScroll.js",
+              "src/assets/js/waypoints.min.js",
+              "src/assets/js/scrollReveal.js",
+              "src/assets/js/owl.carousel.min.js",
+              "src/assets/js/smk-accordion.js",
+              "src/assets/js/jquery.fitvids.js",
+              "src/assets/js/styleswitcher.js",
+              "src/assets/js/index.js"
+            ]
           }
         }
       }
