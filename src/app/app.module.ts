@@ -1,8 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { ComponentOneComponent } from './components/component-1/component-one.component';
 import { ComponentTwoComponent } from './components/component-2/component-two.component';
 import { ComponentThreeComponent } from './components/component-3/component-three.component';
@@ -13,6 +16,8 @@ import { ComponentSevenComponent } from './components/component-7/component-seve
 import { ComponentNineComponent } from './components/component-9/component-nine.component';
 import { ComponentTenComponent } from './components/component-10/component-ten.component';
 import { ComponentEightComponent } from './components/component-8/component-eight.component';
+import { FormComponent } from './components/form/form.component';
+import { MaterialModule } from './shared/material/material.module';
 
 @NgModule({
   declarations: [
@@ -26,11 +31,17 @@ import { ComponentEightComponent } from './components/component-8/component-eigh
     ComponentSevenComponent,
     ComponentNineComponent,
     ComponentTenComponent,
-    ComponentEightComponent
+    ComponentEightComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MaterialModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

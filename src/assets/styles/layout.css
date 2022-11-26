@@ -6081,19 +6081,19 @@ a.quote-big-post-single h5:hover{
 /* #Contact
 ================================================== */
 
-#ajax-form {
+form {
 	width: 100%;
 	font-size: 10px;
 	line-height:14px;
 	color:#101010;
 	margin:0 auto;
 }
-#ajax-form label {
+form label {
 	display: block;
 	font-size: 14px;
 	line-height:30px;
 }
-#ajax-form input{
+form input{
 	width: 100%;
 	border:none;
 	font-weight:400;
@@ -6103,54 +6103,21 @@ a.quote-big-post-single h5:hover{
 	padding-bottom: 10px;
 	background:transparent;
 }
-#ajax-form textarea {
-	width:100%;
-	font-weight:400;
-	letter-spacing:2px;
-	font-size: 12px;
-	line-height:22px;
-	height:62px;
-	margin-top:2px;
-	padding-bottom: 10px;
-	border:none;
-	background: transparent;
-}
-.error {
-	font: 10px/22px 'Open Sans', sans-serif;
-	display: none;
-	color:#ff835c;
-}
-#ajaxsuccess {
-	background: #f5f5f5;
-	color:#101010;
-	font: 20px/60px 'Open Sans', sans-serif;
-	height:60px;
-	display: none;
-	padding-left:10px;
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 30px;
+
+
+form input:active {
+	color: #6D6E71;
 }
 
-.text-align-center{
-	text-align:center;
-	padding-top:10px;
- }
-#ajax-form textarea:active,
-#ajax-form input:active {
+form input:hover {
 	color: #6D6E71;
 }
-#ajax-form textarea:active,
-#ajax-form input:hover {
-	color: #6D6E71;
-}
-#ajax-form textarea:focus,
-#ajax-form input:focus {
+
+form input:focus {
     outline: none;
 }
-#ajax-form textarea,
-#ajax-form input {
+
+form input {
 	border-bottom:2px solid #6D6E71;
 	color: #6D6E71;
 }
@@ -10159,28 +10126,4 @@ h3, h4, h5 {
   .container-cards {
     max-width: 640px !important;
   }
-
-  .input-modal {
-    max-width: 98%;
-  }
-
-  .modal-content form {
-    padding: 0px 50px;
-  }
-}
-
-/* MODAL */
-
-.modal-header {
-  padding-bottom: 0px;
-  background: #f1f2f2;
-  border: none;
-}
-
-.modal-content  .section-padding-top-bottom {
-  padding-top: 0px;
-}
-
-.btn-close:hover {
-  background: none;
 }
