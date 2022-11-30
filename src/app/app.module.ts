@@ -22,6 +22,7 @@ import { CourselComponent } from './components/coursel/coursel.component';
 import { AccordionComponent } from './components/accordion/accordion.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { ModalPhaseComponent } from './components/modal-phase/modal-phase.component';
+import { MessageService } from 'primeng/api';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,7 @@ import { ModalPhaseComponent } from './components/modal-phase/modal-phase.compon
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [MessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
