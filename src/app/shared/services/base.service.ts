@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root',
 })
 export class BaseService {
-  private api = 'http://localhost:3000/'
+  private api = 'https://mentar-back-v3-production.up.railway.app/'
   constructor(private http: HttpClient) {}
 
   postMethod(methodName: string, body: any) {
