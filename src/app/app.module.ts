@@ -6,8 +6,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { ComponentOneComponent } from './components/menu/menu.component';
-import { ComponentTwoComponent } from './components/landing-section/landing-section.component';
+import { MenuComponent } from './components/menu/menu.component';
+import { LandingSectionComponent } from './components/landing-section/landing-section.component';
 import { ComponentThreeComponent } from './components/steps-section/steps-section.component';
 import { ComponentFourComponent } from './components/results-section/results-section.component';
 import { LifeLineComponent } from './components/life-line-section/life-line-section.component';
@@ -26,8 +26,8 @@ import { ModalPhaseComponent } from './components/modal-phase/modal-phase.compon
 @NgModule({
   declarations: [
     AppComponent,
-    ComponentOneComponent,
-    ComponentTwoComponent,
+    MenuComponent,
+    LandingSectionComponent,
     ComponentThreeComponent,
     ComponentFourComponent,
     LifeLineComponent,

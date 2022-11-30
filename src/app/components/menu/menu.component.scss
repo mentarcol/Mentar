@@ -1,0 +1,44 @@
+.header-top {
+  z-index: 1000;
+}
+
+.p-button.p-button-text {
+  color: white;
+}
+
+::ng-deep.pi-bars {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.p-button.p-button-text:enabled:active {
+  background: none;
+  color: white;
+}
+
+.p-button.p-button-text:enabled:hover {
+  color: white;
+}
+
+.p-button:focus {
+  box-shadow: none;
+}
+
+.button-menu {
+  position: absolute;
+  display: inline-block;
+  top: 3px;
+  right: 5%;
+}
+
+@media only screen and (min-width: 1170px) {
+  .button-menu {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1170px) {
+  nav {
+    display: none;
+  }
+}
