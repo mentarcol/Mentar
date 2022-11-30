@@ -27,24 +27,27 @@
       <form autocomplete="off" [formGroup]="form">
         <div class="sixteen columns input-modal">
           <label for="name">
-            <span class="error" id="err-name">Porfa ingresa tu nombre</span>
+            <span class="error-message" *ngIf="form.get('name')?.hasError('required') && form.get('name')?.touched">Porfa ingresa tu nombre</span>
           </label>
           <input name="name" id="name" type="text" formControlName="name" required placeholder="Nombre: *" />
         </div>
+
         <div class="sixteen columns input-modal">
           <label for="phone">
-            <span class="error" id="err-tel">Porfa ingresa tu Whatsapp</span>
+            <span class="error-message" *ngIf="form.get('phone')?.hasError('required') && form.get('phone')?.touched">Porfa ingresa tu Whatsapp</span>
           </label>
           <input name="phone" id="tel" type="tel" formControlName="phone" required placeholder="Whatsapp: *" />
         </div>
+
         <div class="sixteen columns input-modal">
           <label for="email">
-            <span class="error" id="err-email">Porfa ingresa un correo electrónico</span>
-            <span class="error" id="err-emailvld">el correo electrónico no tiene un formato
+            <span class="error-message" *ngIf="form.get('email')?.hasError('required') && form.get('email')?.touched">Porfa ingresa un correo electrónico</span>
+            <span class="error-message" *ngIf="form.get('email')?.hasError('email') && form.get('email')?.touched">el correo electrónico no tiene un formato
               válido</span>
           </label>
           <input name="email" id="email" type="email" formControlName="email" required placeholder="Correo electrónico: *" />
         </div>
+
         <div class="sixteen columns input-modal">
           <div id="button-con">
             <input type="button" class="send_message" value="ASESORÍA GRATIS" (click)="saveUser()" [disabled]="form.invalid">
