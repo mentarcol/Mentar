@@ -1,0 +1,47 @@
+<section class="description-offer" id="proposito">
+
+  <h5 class="subtitle-written green title-coursel">Un propósito</h5>
+  <h5 class="subtitle-written green title-coursel">mayor</h5>
+  <h5 class="subtitle-written green complete-title">Un propósito mayor</h5>
+
+  <div class="section-coursel">
+
+    <div class="content-coursel">
+      <div class="card">
+        <p-galleria [value]="images" [responsiveOptions]="responsiveOptions" [containerStyle]="{'max-width': '350px'}"
+          [numVisible]="5" [circular]="true" [showItemNavigators]="true" [showThumbnails]="false">
+          <ng-template pTemplate="item" let-item>
+            <img [src]="item.previewImageSrc" style="width: 100%; display: block;" />
+          </ng-template>
+          <ng-template pTemplate="thumbnail" let-item>
+            <div class="grid grid-nogutter justify-content-center">
+              <img [src]="item.thumbnailImageSrc" style="display: block;" />
+            </div>
+          </ng-template>
+        </p-galleria>
+      </div>
+    </div>
+
+    <div class="purpose-paragraph paragraph_coursel">
+      <p class="main-font line-height-global">
+        En Mentar, creemos que el emprendimiento con propósito es la herramienta para construir una mejor sociedad.
+        Nuestro propósito es aportar todo nuestro conocimiento y amor para que millones de emprendedores crezcan desde
+        la esencia.
+      </p>
+      <p class="main-font line-height-global">
+        Es por esto, que al comprar nuestra Mentoría, no solo adquieres el conocimiento para crear una marca con
+        propósito.
+        Sino que además el 10% de tu pago será destinado a nuestro programa "Pequeños creativos" donde educamos a niños
+        de bajos recursos para despertar su espíritu emprendedor.
+      </p>
+      <h5 class="second-font"><span class="subtitle-written">¡Hagamos doble impacto en la
+          sociedad!</span></h5>
+      <div class="button-buy">
+        <a href="https://api.whatsapp.com/send/?phone=573054262363&text&type=phone_number&app_absent=0"
+          target="_blank">COMPRAR MENTORÍA</a>
+      </div>
+    </div>
+
+  </div>
+
+</section>

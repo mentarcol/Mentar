@@ -1,0 +1,136 @@
+:host ::ng-deep .custom-galleria {
+  &.p-galleria {
+      &.fullscreen {
+          display: flex;
+          flex-direction: column;
+
+          .p-galleria-content {
+              flex-grow: 1;
+              justify-content: center;
+          }
+      }
+
+      .p-galleria-content {
+          position: relative;
+      }
+
+      .p-galleria-thumbnail-wrapper {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+      }
+
+      .p-galleria-thumbnail-items-container {
+          width: 100%;
+      }
+  }
+}
+
+
+.card {
+  width: 350px;
+  margin: 0 auto;
+}
+
+
+.second-font {
+  font-size: 14px;
+}
+
+.subtitle-written{
+	font-weight:700;
+	letter-spacing:1px;
+  color:#6D6E71;
+}
+
+.button-buy {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 47%;
+}
+
+.button-buy a {
+  justify-content: center;
+  width: 261px;
+  height: 52px;
+  align-self: center;
+  background: #f0eb95;
+  border-radius: 25px;
+  border-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: #6D6E71;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+
+/* DESCRIPTION OFFER */
+.description-offer {
+  padding: 40px 55px;
+  color: #ffff;
+  background-color: #6D6E71;;
+
+}
+.description-offer .subtitle-written {
+  margin-bottom: 0px;
+}
+
+.description-offer h5 {
+  margin-bottom: 20px;
+  line-height: 25px;
+}
+.description-offer h5 span {
+  color: #fff !important;
+}
+.description-offer p:first-child {
+  margin: 0px;
+}
+
+.description-offer p {
+  margin: 25px 0px;
+  text-align: center;
+}
+/* END DESCRIPTION OFFER */
+
+.green{
+	color:#C6E0B4;
+}
+
+.content-coursel {
+  margin: 0;
+  display: flex;
+  padding: 20px 0px;
+}
+
+.complete-title {
+  display: none;
+}
+
+@media only screen and (min-width: 990px) {
+  .section-coursel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-right: 40px;
+  }
+
+  .button-buy {
+    top: 10%;
+  }
+
+  .paragraph_coursel{
+    margin-top: 20px;
+  }
+
+  .title-coursel {
+    display: none;
+  }
+
+  .complete-title {
+    display: block;
+  }
+}
+
