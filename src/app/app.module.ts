@@ -6,18 +6,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { ComponentOneComponent } from './components/component-1/component-one.component';
-import { ComponentTwoComponent } from './components/component-2/component-two.component';
-import { ComponentThreeComponent } from './components/component-3/component-three.component';
-import { ComponentFourComponent } from './components/component-4/component-four.component';
-import { ComponentFiveComponent } from './components/component-5/component-five.component';
-import { ComponentSixComponent } from './components/component-6/component-six.component';
-import { ComponentSevenComponent } from './components/component-7/component-seven.component';
-import { ComponentNineComponent } from './components/component-9/component-nine.component';
-import { ComponentTenComponent } from './components/component-10/component-ten.component';
-import { ComponentEightComponent } from './components/component-8/component-eight.component';
+import { ComponentOneComponent } from './components/menu/menu.component';
+import { ComponentTwoComponent } from './components/landing-section/landing-section.component';
+import { ComponentThreeComponent } from './components/steps-section/steps-section.component';
+import { ComponentFourComponent } from './components/results-section/results-section.component';
+import { LifeLineComponent } from './components/life-line-section/life-line-section.component';
+import { ComponentSixComponent } from './components/brand-path-section/brand-path-section.component';
+import { ComponentSevenComponent } from './components/phase-section/phase-section.component';
+import { ComponentFreeAdvice } from './components/free-advice-section/free-advice-section.component';
+import { ComponentTenComponent } from './components/footer/footer.component';
 import { FormComponent } from './components/form/form.component';
 import { MaterialModule } from './shared/material/material.module';
+import { PrimengModule } from './shared/primeng/primeng.module';
+import { CourselComponent } from './components/coursel/coursel.component';
+import { AccordionComponent } from './components/accordion/accordion.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { ModalPhaseComponent } from './components/modal-phase/modal-phase.component';
 
 @NgModule({
   declarations: [
@@ -26,13 +30,16 @@ import { MaterialModule } from './shared/material/material.module';
     ComponentTwoComponent,
     ComponentThreeComponent,
     ComponentFourComponent,
-    ComponentFiveComponent,
+    LifeLineComponent,
     ComponentSixComponent,
     ComponentSevenComponent,
-    ComponentNineComponent,
+    ComponentFreeAdvice,
     ComponentTenComponent,
-    ComponentEightComponent,
-    FormComponent
+    FormComponent,
+    CourselComponent,
+    AccordionComponent,
+    SidebarComponent,
+    ModalPhaseComponent
   ],
   imports: [
     BrowserModule,
@@ -40,6 +47,7 @@ import { MaterialModule } from './shared/material/material.module';
     HttpClientModule,
     BrowserAnimationsModule,
     MaterialModule,
+    PrimengModule,
     FormsModule,
     ReactiveFormsModule
   ],

@@ -1,10 +1,23 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { FormComponent } from './components/form/form.component';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
-  title = 'test_mentar';
+export class AppComponent implements OnInit {
+
+  constructor(
+    private dialog: MatDialog
+  ) {}
+
+  ngOnInit(): void {
+    setTimeout(() => {
+      this.dialog.open(FormComponent, {
+        maxWidth: '800px',
+      });
+    }, 14000);
+  }
 }
