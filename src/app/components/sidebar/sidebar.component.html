@@ -1,0 +1,26 @@
+<p-sidebar [(visible)]="visibleSidebar" position="right" styleClass="sidebar-menu" [baseZIndex]="10000" [dismissible]="true" (onHide)="handleCloseSidebar()">
+  <ng-template pTemplate="content">
+    <nav>
+      <ul>
+        <li>
+          <div class="nav-logo"><img src="../../../assets/images/logo.png" alt="Logo"></div>
+        </li>
+        <li>
+          <a href="#mentoria" >Mentoría</a>
+        </li>
+        <li>
+          <a href="#etapas" >Etapas</a>
+        </li>
+        <li>
+          <a href="#proposito" >Proposito</a>
+        </li>
+        <li>
+          <a href="#asesoria" >Asesoría gratis</a>
+        </li>
+        <li>
+          <a href="#contacto" >Contacto</a>
+        </li>
+      </ul>
+    </nav>
+  </ng-template>
+</p-sidebar>
