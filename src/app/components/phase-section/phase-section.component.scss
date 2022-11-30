@@ -88,22 +88,9 @@
   color: #C6E0B4;
   cursor: pointer;
 }
-// #modal1 .image-modal {
-//   background: url("../images/pensum-1.jpg") no-repeat center center;
-//   background-size: cover;
-// }
 
-// #modal2 .image-modal {
-//   background: url("../images/pensum-2.jpg") no-repeat center center;
-//   background-size: cover;
-// }
-
-// #modal3 .image-modal {
-//   background: url("../images/pensum-3.jpg") no-repeat center center;
-//   background-size: cover;
-// }
-
-.image-modal {
-  height: 485px;
+.max-height {
+  max-height: 90px;
 }
+
 /* END CARDS */
