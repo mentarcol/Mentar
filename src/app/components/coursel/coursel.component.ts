@@ -10,7 +10,7 @@ export class CourselComponent implements OnInit {
   images = [
     {
       previewImageSrc: '/assets/images/coursel/photo-1.jpg',
-      thumbnailImageSrc: '/assets/images/coursel/photo-1.jpg',
+      thumbnailImageSrc: 'assets/images/coursel/photo-1.jpg',
       alt: 'Description for Image 1',
       title: 'Title 1',
     },
@@ -45,20 +45,20 @@ export class CourselComponent implements OnInit {
       title: 'Title 6',
     },
     {
-      previewImageSrc: '/assets/images/coursel/photo-7.JPG',
-      thumbnailImageSrc: '/assets/images/coursel/photo-7.JPG',
+      previewImageSrc: '/images/coursel/photo-7.JPG',
+      thumbnailImageSrc: 'images/coursel/photo-7.JPG',
       alt: 'Description for Image 7',
       title: 'Title 7',
     },
     {
-      previewImageSrc: '/assets/images/coursel/photo-8.JPG',
+      previewImageSrc: '/../../../assets/images/coursel/photo-8.JPG',
       thumbnailImageSrc: '/assets/images/coursel/photo-8.JPG',
       alt: 'Description for Image 8',
       title: 'Title 8',
     },
     {
-      previewImageSrc: '/assets/images/coursel/photo-9.JPG',
-      thumbnailImageSrc: '/assets/images/coursel/photo-9.JPG',
+      previewImageSrc: 'images/coursel/photo-9.jpg',
+      thumbnailImageSrc: '/assets/images/coursel/photo-9.jpg',
       alt: 'Description for Image 9',
       title: 'Title 9',
     }
