@@ -45,14 +45,14 @@ export class CourselComponent implements OnInit {
       title: 'Title 6',
     },
     {
-      previewImageSrc: '/images/coursel/photo-7.JPG',
-      thumbnailImageSrc: 'images/coursel/photo-7.JPG',
+      previewImageSrc: 'src/assets/images/coursel/photo-7.jpg',
+      thumbnailImageSrc: 'src/assets/images/coursel/photo-7.jpg',
       alt: 'Description for Image 7',
       title: 'Title 7',
     },
     {
-      previewImageSrc: '/../../../assets/images/coursel/photo-8.JPG',
-      thumbnailImageSrc: '/assets/images/coursel/photo-8.JPG',
+      previewImageSrc: '../../../assets/images/coursel/photo-8.JPG',
+      thumbnailImageSrc: '../../../assets/images/coursel/photo-8.JPG',
       alt: 'Description for Image 8',
       title: 'Title 8',
     },
