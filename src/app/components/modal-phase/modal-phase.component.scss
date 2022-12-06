@@ -1,25 +1,29 @@
 ::ng-deep.mat-dialog-container {
   padding: 0px;
 }
-
-.image-1 {
-  background: url("/assets/images/pensum-1.jpg") no-repeat center center;
-  background-size: cover;
-}
-
-.image-2 {
-  background: url("/assets/images/pensum-2.jpg") no-repeat center center;
-  background-size: cover;
-}
-
-.image-3 {
-  background: url("/assets/images/pensum-3.jpg") no-repeat center center;
-  background-size: cover;
-}
-
 .image-modal {
   height: 485px;
   width: 385px;
+}
+.image-1 {
+  background-image: url('/assets/images/pensum-1.JPG');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.image-2 {
+  background-image: url("/assets/images/pensum-2.JPG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.image-3 {
+  background-image: url("/assets/images/pensum-3.JPG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .modal-headers {

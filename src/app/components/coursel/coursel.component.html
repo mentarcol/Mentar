@@ -9,7 +9,7 @@
     <div class="content-coursel">
       <div class="card">
         <p-galleria [value]="images" [responsiveOptions]="responsiveOptions" [containerStyle]="{'max-width': '350px'}"
-          [numVisible]="5" [circular]="true" [showItemNavigators]="true" [showThumbnails]="false">
+          [numVisible]="5" [circular]="true" [showItemNavigators]="true" [showThumbnails]="false" [autoPlay]="true" [transitionInterval]="3000">
           <ng-template pTemplate="item" let-item>
             <img [src]="item.previewImageSrc" style="width: 100%; display: block;" />
           </ng-template>
@@ -37,8 +37,7 @@
       <h5 class="second-font"><span class="subtitle-written">¡Hagamos doble impacto en la
           sociedad!</span></h5>
       <div class="button-buy">
-        <a href="https://api.whatsapp.com/send/?phone=573054262363&text&type=phone_number&app_absent=0"
-          target="_blank">COMPRAR MENTORÍA</a>
+        <a href="https://wa.link/lsj1o4" target="_blank">COMPRAR MENTORÍA</a>
       </div>
     </div>
 

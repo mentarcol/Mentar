@@ -1,6 +1,11 @@
 .accordion-content {
   display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  font-size: 12px;
+  line-height: 20px;
 }
