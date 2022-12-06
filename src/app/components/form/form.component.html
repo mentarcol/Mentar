@@ -34,6 +34,8 @@
 
         <div class="sixteen columns input-modal">
           <label for="phone">
+            <span class="error-message" *ngIf="form.get('phone')?.hasError('minlength') && form.get('phone')?.touched">Debe de tener minimo 10 numeros</span>
+            <span class="error-message" *ngIf="form.get('phone')?.hasError('maxlength') && form.get('phone')?.touched">Debe de tener maximo 10 numeros</span>
             <span class="error-message" *ngIf="form.get('phone')?.hasError('required') && form.get('phone')?.touched">Porfa ingresa tu Whatsapp</span>
           </label>
           <input name="phone" id="tel" type="tel" formControlName="phone" required placeholder="Whatsapp: *" />
@@ -50,7 +52,12 @@
 
         <div class="sixteen columns input-modal">
           <div id="button-con">
-            <input type="button" class="send_message" value="ASESORÍA GRATIS" (click)="saveUser()" [disabled]="form.invalid">
+            <button type="button" class="send_message" (click)="saveUser()" [disabled]="form.invalid">
+              <ng-container *ngIf="!showLoader">
+                ASESORÍA GRATIS
+              </ng-container >
+              <mat-spinner *ngIf="showLoader" [diameter]="25" [strokeWidth]="6"></mat-spinner>
+            </button>
           </div>
         </div>
       </form>

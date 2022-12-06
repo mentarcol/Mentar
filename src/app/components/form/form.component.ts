@@ -11,6 +11,7 @@ import { BaseService } from 'src/app/shared/services/base.service';
 })
 export class FormComponent implements OnInit {
   form!: FormGroup;
+  showLoader = false;
 
   constructor(
     private fb: FormBuilder,
@@ -27,22 +28,25 @@ export class FormComponent implements OnInit {
     this.form = this.fb.group({
       name: [null, [Validators.required]],
       email: [null, [Validators.required, Validators.email]],
-      phone: [null, [Validators.required]],
+      phone: [null, [Validators.required, Validators.minLength(10), Validators.maxLength(10)]],
     });
   }
 
   saveUser() {
+    this.showLoader = true;
     this.baseService.postMethod('users', this.form.value).subscribe({
       next: () => {
-        this.messageService.add({
-          key: 'myKey1',
-          severity: 'success',
-          detail: 'Enviado exitosamente.',
-        });
+        this.showLoader = false;
         this.form.reset();
         this.dialog.closeAll();
+        this.messageService.add({
+          severity: 'success',
+          detail: 'Enviado exitosamente.',
+          life: 4000
+        });
       },
       error: () => {
+        this.showLoader = false;
         this.messageService.add({
           key: 'myKey1',
           severity: 'error',

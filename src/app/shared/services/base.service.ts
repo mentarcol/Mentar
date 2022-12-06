@@ -9,6 +9,6 @@ export class BaseService {
   constructor(private http: HttpClient) {}
 
   postMethod(methodName: string, body: any) {
-    return this.http.post(this.api + methodName, body);
+    return this.http.post(this.api + methodName, body, { responseType: 'text' });
   }
 }
